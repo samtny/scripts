@@ -1,0 +1,4 @@
+Host flexdev2
+  User		amiflex
+  HostName 	ded-6062.prod.hosting.acquia.com
+  Port 		22
