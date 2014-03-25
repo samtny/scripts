@@ -8,3 +8,4 @@ drush vset -y preprocess_css 0
 drush vset -y preprocess_js 0
 drush vset -y devel_xhprof_directory '/usr/share/php'
 drush vset -y devel_xhprof_url 'http://sam-www/xhprof_html'
+drush vset -y file_temporary_path '/tmp'
