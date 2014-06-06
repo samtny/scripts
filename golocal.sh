@@ -1,6 +1,12 @@
 #!/bin/bash
 set -x
+drush cc drush
+
 drush vset -y file_temporary_path '/tmp'
+
+drush updb -y
+drush fra -y
+
 drush dis update acquia_agent apachesolr -y
 drush en devel -y
 drush vset error_level 1
