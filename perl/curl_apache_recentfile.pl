@@ -1,4 +1,4 @@
-($username, $password, $basedir, $localdir) = @ARGV;
+($username, $password, $basedir, $tofile) = @ARGV;
 
 $command = "curl -u $username:$password $basedir";
 
@@ -8,7 +8,7 @@ $toplist = `$command`;
 
 ($zipfile) = (@files[-3] =~ m/href="(.*?)"/);
 
-$command = "curl -u $username:$password -o $localdir$zipfile $basedir$zipfile";
+$command = "curl -u $username:$password -o $localdir$zipfile $tofile";
 
 exit system($command);
 
