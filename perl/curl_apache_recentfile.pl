@@ -8,7 +8,7 @@ $toplist = `$command`;
 
 ($zipfile) = (@files[-3] =~ m/href="(.*?)"/);
 
-$command = "curl -u $username:$password -o $localdir$zipfile $tofile";
+$command = "curl -u $username:$password -o $tofile $basedir$zipfile";
 
 exit system($command);
 
